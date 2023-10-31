@@ -26,7 +26,7 @@ jobs:
         run: npm install -g @angular/cli@16
       - name: Instalação de dependências
         run: npm install
-        workin-directory: sgcmapp/
+        working-directory: sgcmapp/
         run: npm install
       - name: Build
         working-directory: sgcmapp/
