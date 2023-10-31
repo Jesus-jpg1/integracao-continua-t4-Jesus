@@ -10,6 +10,7 @@ on:
   pull_request:
     paths:
       - 'sgcmapi/**'
+  workflo_call:
 
 jobs:
   build:
