@@ -1,5 +1,1 @@
-<<<<<<< HEAD
 teste3
-=======
-teste
->>>>>>> 03d50a5484b326e46eb35664c4fd99cfdede5ab5

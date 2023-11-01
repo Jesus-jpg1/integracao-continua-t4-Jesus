@@ -13,50 +13,12 @@ permissions:
 
 jobs:
 
-<<<<<<< HEAD
   main:
     name: CI Workflow Main
     uses: ./.github/workflows/ci-backend.yml
   
   merge:
     needs: main
-=======
-  build:
-    name: Build Back-end
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-      - name: Install Dependencies
-        run: npm install
-      - name: Build Project
-        run: npm run build
-
-  test:
-    name: Test Back-end
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: 14
-      - name: Install Dependencies
-        run: npm install
-      - name: Run Tests
-        run: npm test
-
-  merge:
-    needs:
-      - build
-      - test
->>>>>>> 03d50a5484b326e46eb35664c4fd99cfdede5ab5
     runs-on: ubuntu-latest
     steps:
       - name: Checkout

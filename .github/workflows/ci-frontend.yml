@@ -25,7 +25,6 @@ jobs:
       - name: Cliente Angular
         run: npm install -g @angular/cli@16
       - name: Instalação de dependências
-        run: npm install
         working-directory: sgcmapp/
         run: npm install
       - name: Build
@@ -47,4 +46,4 @@ jobs:
         run: npm install
       - name: Test
         working-directory: sgcmapp/
-        run: ng test --no-watch --no-progress--browsers=ChromeHeadless
+        run: ng test --no-watch --no-progress --browsers=ChromeHeadless
